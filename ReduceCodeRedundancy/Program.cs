@@ -1,6 +1,9 @@
 ﻿
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
+
+//-------------------------TERNARY OPERATOR--------------------------------------//
 int age = 40;
 string message = "";
 
@@ -19,7 +22,10 @@ message = (age >= 18) ? "Es mayor de edad" : "Es menor de edad";
 
 Console.WriteLine(message);
 
-//-----------------------------------------------------------------------------//
+
+
+
+//-------------------------Null-Coalescing Operator--------------------------------------//
 
 //string? category = null;
 //string name = "";
@@ -38,3 +44,18 @@ string? category = null;
 string name = category ?? "Otro";
 
 Console.WriteLine(name);
+
+
+
+
+
+//--------------------------Evaluate Car null-----------------------------------//
+
+
+Car car = null;
+
+if (car != null)
+{
+    Console.WriteLine(car.Brand);
+}
+record Car(string Brand, string Model);
