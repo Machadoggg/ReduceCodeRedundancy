@@ -21,16 +21,20 @@ Console.WriteLine(message);
 
 //-----------------------------------------------------------------------------//
 
-string? category = null;
-string name = "";
+//string? category = null;
+//string name = "";
 
-if (category != null)
-{
-    name = category;
-}
-else
-{
-    name = "Otra";
-}
+//if (category != null)
+//{
+//    name = category;
+//}
+//else
+//{
+//    name = "Otra";
+//}
+
+string? category = null;
+
+string name = category ?? "Otro";
 
 Console.WriteLine(name);
