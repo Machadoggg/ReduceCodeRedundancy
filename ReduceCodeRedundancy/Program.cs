@@ -11,8 +11,10 @@ string message = "";
 //    message = "Es menor de edad";
 //}
 
-// use ternary operator if the answer is a binary scenario
+// use ternary operator (? / true : false) if the answer is a binary scenario
 // obtain var value (message)
 message = (age >= 18) ? "Es mayor de edad" : "Es menor de edad";
 
 Console.WriteLine(message);
+
+//-----------------------------------------------------------------------------//
