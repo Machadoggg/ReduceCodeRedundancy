@@ -94,7 +94,34 @@ class Program
         // Use LINQ with the same condition
         List<string> names2 = names.Where(n => n.ToUpper()[0] == 'A').ToList();
 
-        return;
+        //return;
+
+
+
+
+
+        //--------------------------SWITCH CASE-----------------------------------//
+
+        int op = 2;
+
+        switch (op)
+        {
+            case 1:
+                Console.WriteLine("Opción 1 seleccionada");
+                break;
+            case 2:
+                Console.WriteLine("Opción 2 seleccionada");
+                break;
+            case 3:
+                Console.WriteLine("Opción 3 seleccionada");
+                break;
+            default:
+                Console.WriteLine("Opción válida");
+                break;
+        }
+
+
+
     }
 }
 record Car(string Brand, string Model);
