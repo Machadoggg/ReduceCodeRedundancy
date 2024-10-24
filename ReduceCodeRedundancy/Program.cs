@@ -52,10 +52,21 @@ Console.WriteLine(name);
 //--------------------------Evaluate Car null-----------------------------------//
 
 
+//Car car = null;
+
+//if (car != null)
+//{
+//    Console.WriteLine(car.Brand);
+//}
+//record Car(string Brand, string Model);
+
+// Use NULL conditional (?)
+// to evaluate if car is null
+// if encadenate Console.WriteLine(car?.Brand?.?. ...);
 Car car = null;
 
 if (car != null)
 {
-    Console.WriteLine(car.Brand);
+    Console.WriteLine(car?.Brand);
 }
 record Car(string Brand, string Model);
