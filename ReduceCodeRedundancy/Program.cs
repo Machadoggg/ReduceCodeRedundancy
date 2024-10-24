@@ -81,15 +81,17 @@ class Program
             "Ana", "Juan", "Alejandro"
         };
 
-        List<string> names2 = new();
+        //List<string> names2 = new();
 
-        foreach (string name2 in names)
-        {
-            if (name2.ToUpper()[0] == 'A')
-            {
-                names2.Add(name2);
-            }
-        }
+        //foreach (string name2 in names)
+        //{
+        //    if (name2.ToUpper()[0] == 'A')
+        //    {
+        //        names2.Add(name2);
+        //    }
+        //}
+
+        List<string> names2 = names.Where(n => n.ToUpper()[0] == 'A').ToList();
 
         return;
     }
