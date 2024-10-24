@@ -1,6 +1,7 @@
 ﻿
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Runtime.InteropServices;
 
 class Program
 {
@@ -140,6 +141,29 @@ class Program
 
 
 
+
+        
+
+
+
+
+
+    }
+    //--------------------------Generic Functions-----------------------------------//
+
+    class Operations
+    {
+               
+        public int Add(int a, int b)
+        {
+            return a + b;
+        }
+
+        
+        public double Add(double a, double b)
+        {
+            return a + b;
+        }
     }
 }
 record Car(string Brand, string Model);
