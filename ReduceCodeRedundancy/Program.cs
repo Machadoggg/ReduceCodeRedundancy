@@ -104,20 +104,38 @@ class Program
 
         int op = 2;
 
-        switch (op)
+        //switch (op)
+        //{
+        //    case 1:
+        //        Console.WriteLine("Opción 1 seleccionada");
+        //        break;
+        //    case 2:
+        //        Console.WriteLine("Opción 2 seleccionada");
+        //        break;
+        //    case 3:
+        //        Console.WriteLine("Opción 3 seleccionada");
+        //        break;
+        //    default:
+        //        Console.WriteLine("Opción válida");
+        //        break;
+        //}
+
+        // create array with save behaviors
+        Action[] actions = new Action[]
         {
-            case 1:
-                Console.WriteLine("Opción 1 seleccionada");
-                break;
-            case 2:
-                Console.WriteLine("Opción 2 seleccionada");
-                break;
-            case 3:
-                Console.WriteLine("Opción 3 seleccionada");
-                break;
-            default:
-                Console.WriteLine("Opción válida");
-                break;
+            () => Console.WriteLine("Opción 1 seleccionada"),
+            () => Console.WriteLine("Opción 2 seleccionada"),
+            () => Console.WriteLine("Opción 3 seleccionada"),
+            () => Console.WriteLine("Opción 4 seleccionada")
+        };
+
+        if (op > 0 && op <= actions.Length)
+        {
+            actions[op - 1]();
+        }
+        else
+        {
+            Console.WriteLine("Opción no valida");
         }
 
 
