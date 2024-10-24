@@ -91,6 +91,7 @@ class Program
         //    }
         //}
 
+        // Use LINQ with the same condition
         List<string> names2 = names.Where(n => n.ToUpper()[0] == 'A').ToList();
 
         return;
