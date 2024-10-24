@@ -153,16 +153,19 @@ class Program
 
     class Operations
     {
-               
-        public int Add(int a, int b)
-        {
-            return a + b;
-        }
+        //public int Add(int a, int b)
+        //{
+        //    return a + b;
+        //}
 
-        
-        public double Add(double a, double b)
+        //public double Add(double a, double b)
+        //{
+        //    return a + b;
+        //}
+
+        public T Add<T>(T a, T b) where T : struct
         {
-            return a + b;
+            return (dynamic)a + (dynamic)b;
         }
     }
 }
